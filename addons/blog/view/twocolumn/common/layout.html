@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <title>{:isset($title)?$title:'首页'} - {$site.name}</title>
+    <meta name="keywords" content="{:isset($keywords)?$title:''}"/>
+    <meta name="description" content="{:isset($description)?$title:''}"/>
+    <meta name="apple-mobile-web-app-title" content="My App">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="author" content="">
+    <link rel="stylesheet" href="__ADDON__/twocolumn/css/main.css">
+    <link rel="stylesheet" href="__CDN__/assets/libs/font-awesome/css/font-awesome.min.css"/>
+
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    {__STYLE__}
+</head>
+
+<body>
+
+<!-- 侧栏 -->
+{include file="common/sidebar"}
+
+{__CONTENT__}
+
+<script src="__CDN__/assets/libs/jquery/dist/jquery.min.js"></script>
+
+{__SCRIPT__}
+</body>
+
+</html>

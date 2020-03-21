@@ -1,0 +1,18 @@
+{layout name="common/layout" /}
+
+<!-- 文章列表 -->
+<div id="post-list">
+    <h2>{$category.name}</h2>
+    <ul>
+        {include file="common/postlist"}
+    </ul>
+    <!-- 分页 -->
+    <div class="page">
+        {if $prevurl}
+        <a href="{$prevurl}">上一页</a>
+        {/if}
+        {if $nexturl}
+        <a href="{$nexturl}">下一页</a>
+        {/if}
+    </div>
+</div>

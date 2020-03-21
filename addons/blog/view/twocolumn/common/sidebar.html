@@ -1,0 +1,20 @@
+<div id="side" class="ta-c" style="background-image: url('{$config.background|cdnurl}');background-size: cover;">
+    <div class="logo">
+        <img src="{$config.avatar|cdnurl}" alt="">
+    </div>
+    <h1>{$config.name}</h1>
+    <h3>{$config.enname}</h3>
+    <ul class="nav">
+        <li><a href="{:addon_url('blog/index/index')}" class="{:request()->controller()=='index'?'active':''}"><i class="fa fa-home"></i> 首页</a></li>
+        <li><a href="{:addon_url('blog/post/index', [':id'=>1])}" class="{:request()->controller()=='post'?'active':''}"><i class="fa fa-user"></i> 关于我</a></li>
+        <li><a href="{:addon_url('blog/archive/index')}" class="{:request()->controller()=='archive'?'active':''}"><i class="fa fa-list"></i> 归档</a></li>
+    </ul>
+    <p class="intro ta-l hidden-l">{$config.intro}</p>
+    {if true}
+    <div class="doing hidden-l">
+        <p>FastAdmin博客插件正式发布。</p>
+        <p><span class="icon-map-marker"></span>广东 深圳</p>
+    </div>
+    {/if}
+    <p class="copyright hidden-l">© {$config.enname} 2017 - 2018</p>
+</div>

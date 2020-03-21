@@ -1,0 +1,37 @@
+---------------------------------------------------------------
+[ 2019-11-23T20:50:15+08:00 ] 127.0.0.1 GET www.jfmblog.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.148882s ] mysql:host=127.0.0.1;dbname=jfmblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_category` [ RunTime:0.249163s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_post` [ RunTime:0.022701s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_blog_post` WHERE  `status` = 'normal' LIMIT 1 [ RunTime:0.004437s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_post` WHERE  `status` = 'normal' ORDER BY `weigh` DESC,`id` DESC LIMIT 0,10 [ RunTime:0.001441s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2,1) [ RunTime:0.001669s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2,1) [ RunTime:0.000966s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2) [ RunTime:0.000834s ]
+---------------------------------------------------------------
+[ 2019-11-23T20:50:42+08:00 ] 127.0.0.1 GET www.jfmblog.com/c/2.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013141s ] mysql:host=127.0.0.1;dbname=jfmblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_category` [ RunTime:0.012697s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001032s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_post` [ RunTime:0.005073s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_blog_post` WHERE  `status` = 'normal'  AND `category_id` = 2 LIMIT 1 [ RunTime:0.000971s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_post` WHERE  `status` = 'normal'  AND `category_id` = 2 ORDER BY `weigh` DESC,`id` DESC LIMIT 0,10 [ RunTime:0.001584s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2) [ RunTime:0.000914s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2,1) [ RunTime:0.000943s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2) [ RunTime:0.001073s ]
+---------------------------------------------------------------
+[ 2019-11-23T20:50:49+08:00 ] 127.0.0.1 GET www.jfmblog.com/p/5.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002875s ] mysql:host=127.0.0.1;dbname=jfmblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_post` [ RunTime:0.013861s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_post` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.001306s ]
+[ sql ] [ SQL ] UPDATE `fa_blog_post`  SET `views`=`views`+1  WHERE  `id` = 5 [ RunTime:0.037620s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_category` [ RunTime:0.012633s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000986s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_comment` [ RunTime:0.015900s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_blog_comment` WHERE  `post_id` = 5  AND `pid` = 0  AND `status` = 'normal' LIMIT 1 [ RunTime:0.001079s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_comment` WHERE  `post_id` = 5  AND `pid` = 0  AND `status` = 'normal' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001332s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_block` [ RunTime:0.020441s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_post` WHERE  `status` = 'normal' ORDER BY `createtime` DESC LIMIT 3 [ RunTime:0.001137s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2,1) [ RunTime:0.001039s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2,1) [ RunTime:0.000978s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2) [ RunTime:0.000756s ]

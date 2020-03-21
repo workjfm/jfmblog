@@ -1,0 +1,21 @@
+---------------------------------------------------------------
+[ 2020-03-12T23:00:59+08:00 ] 127.0.0.1 GET www.jfmblog.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028596s ] mysql:host=127.0.0.1;dbname=jfmblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_category` [ RunTime:0.059372s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_post` [ RunTime:0.024218s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_blog_post` WHERE  `status` = 'normal' LIMIT 1 [ RunTime:0.000990s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_post` WHERE  `status` = 'normal' ORDER BY `weigh` DESC,`id` DESC LIMIT 0,10 [ RunTime:0.009429s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (4,3) [ RunTime:0.000989s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_block` [ RunTime:0.021265s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_block` WHERE  `status` = 'normal'  AND `name` = 'indexfocus' ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000951s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_block` WHERE  `status` = 'normal'  AND `name` = 'indexsmallfocus' ORDER BY `id` DESC LIMIT 4 [ RunTime:0.000936s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (4,3) [ RunTime:0.000928s ]
+---------------------------------------------------------------
+[ 2020-03-12T23:02:04+08:00 ] 127.0.0.1 GET www.jfmblog.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012878s ] mysql:host=127.0.0.1;dbname=jfmblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_category` [ RunTime:0.013647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_post` [ RunTime:0.004818s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_blog_post` WHERE  `status` = 'normal' LIMIT 1 [ RunTime:0.000854s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_post` WHERE  `status` = 'normal' ORDER BY `weigh` DESC,`id` DESC LIMIT 0,10 [ RunTime:0.000966s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (4,3) [ RunTime:0.000905s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (4,3) [ RunTime:0.000915s ]

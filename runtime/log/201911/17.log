@@ -1,0 +1,132 @@
+---------------------------------------------------------------
+[ 2019-11-17T10:11:21+08:00 ] 127.0.0.1 GET www.jfmblog.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.041671s ] mysql:host=127.0.0.1;dbname=jfmblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_category` [ RunTime:0.059656s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_post` [ RunTime:0.049964s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_blog_post` WHERE  `status` = 'normal' LIMIT 1 [ RunTime:0.002233s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_post` WHERE  `status` = 'normal' ORDER BY `weigh` DESC,`id` DESC LIMIT 0,10 [ RunTime:0.002813s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2,1) [ RunTime:0.001452s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2,1) [ RunTime:0.001277s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2) [ RunTime:0.001228s ]
+---------------------------------------------------------------
+[ 2019-11-17T10:11:22+08:00 ] 127.0.0.1 GET www.jfmblog.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024217s ] mysql:host=127.0.0.1;dbname=jfmblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_category` [ RunTime:0.020769s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_post` [ RunTime:0.005950s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_blog_post` WHERE  `status` = 'normal' LIMIT 1 [ RunTime:0.001249s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_post` WHERE  `status` = 'normal' ORDER BY `weigh` DESC,`id` DESC LIMIT 0,10 [ RunTime:0.001295s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2,1) [ RunTime:0.001438s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2,1) [ RunTime:0.001250s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2) [ RunTime:0.001200s ]
+---------------------------------------------------------------
+[ 2019-11-17T10:11:48+08:00 ] 127.0.0.1 GET www.jfmblog.com/archive.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015740s ] mysql:host=127.0.0.1;dbname=jfmblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_post` [ RunTime:0.013100s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`createtime` FROM `fa_blog_post` WHERE  `status` = 'normal' ORDER BY `createtime` DESC [ RunTime:0.002007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_block` [ RunTime:0.041785s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_category` [ RunTime:0.005826s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2,1) [ RunTime:0.001334s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2) [ RunTime:0.001235s ]
+---------------------------------------------------------------
+[ 2019-11-17T10:11:56+08:00 ] 127.0.0.1 GET www.jfmblog.com/p/1.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015540s ] mysql:host=127.0.0.1;dbname=jfmblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_post` [ RunTime:0.014060s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_post` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001938s ]
+[ sql ] [ SQL ] UPDATE `fa_blog_post`  SET `views`=`views`+1  WHERE  `id` = 1 [ RunTime:0.033792s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_category` [ RunTime:0.022745s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001117s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_comment` [ RunTime:0.057637s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_blog_comment` WHERE  `post_id` = 1  AND `pid` = 0  AND `status` = 'normal' LIMIT 1 [ RunTime:0.002727s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_comment` WHERE  `post_id` = 1  AND `pid` = 0  AND `status` = 'normal' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.003533s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_comment` WHERE  `pid` IN (8) [ RunTime:0.001736s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_block` [ RunTime:0.014527s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_post` WHERE  `status` = 'normal' ORDER BY `createtime` DESC LIMIT 3 [ RunTime:0.001090s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2,1) [ RunTime:0.001213s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2,1) [ RunTime:0.001242s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2) [ RunTime:0.001149s ]
+---------------------------------------------------------------
+[ 2019-11-17T10:12:05+08:00 ] 127.0.0.1 GET www.jfmblog.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023349s ] mysql:host=127.0.0.1;dbname=jfmblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_category` [ RunTime:0.006438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_post` [ RunTime:0.007752s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_blog_post` WHERE  `status` = 'normal' LIMIT 1 [ RunTime:0.001979s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_post` WHERE  `status` = 'normal' ORDER BY `weigh` DESC,`id` DESC LIMIT 0,10 [ RunTime:0.002846s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2,1) [ RunTime:0.001402s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2,1) [ RunTime:0.001305s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2) [ RunTime:0.001121s ]
+---------------------------------------------------------------
+[ 2019-11-17T10:13:26+08:00 ] 127.0.0.1 GET www.jfmblog.com/p/1.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017676s ] mysql:host=127.0.0.1;dbname=jfmblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_post` [ RunTime:0.022179s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_post` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001115s ]
+[ sql ] [ SQL ] UPDATE `fa_blog_post`  SET `views`=`views`+1  WHERE  `id` = 1 [ RunTime:0.040384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_category` [ RunTime:0.013859s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001705s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_comment` [ RunTime:0.006735s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_blog_comment` WHERE  `post_id` = 1  AND `pid` = 0  AND `status` = 'normal' LIMIT 1 [ RunTime:0.001807s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_comment` WHERE  `post_id` = 1  AND `pid` = 0  AND `status` = 'normal' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001443s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_comment` WHERE  `pid` IN (8) [ RunTime:0.001449s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2,1) [ RunTime:0.001178s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2,1) [ RunTime:0.001202s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2) [ RunTime:0.001269s ]
+---------------------------------------------------------------
+[ 2019-11-17T10:13:27+08:00 ] 127.0.0.1 GET www.jfmblog.com/p/1.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003815s ] mysql:host=127.0.0.1;dbname=jfmblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_post` [ RunTime:0.013307s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_post` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001052s ]
+[ sql ] [ SQL ] UPDATE `fa_blog_post`  SET `views`=`views`+1  WHERE  `id` = 1 [ RunTime:0.151325s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_category` [ RunTime:0.029906s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001585s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_blog_comment` [ RunTime:0.009814s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_blog_comment` WHERE  `post_id` = 1  AND `pid` = 0  AND `status` = 'normal' LIMIT 1 [ RunTime:0.001329s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_comment` WHERE  `post_id` = 1  AND `pid` = 0  AND `status` = 'normal' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001446s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_comment` WHERE  `pid` IN (8) [ RunTime:0.001134s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2,1) [ RunTime:0.001322s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2,1) [ RunTime:0.001138s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_blog_category` WHERE  `id` IN (2) [ RunTime:0.000971s ]
+---------------------------------------------------------------
+[ 2019-11-17T10:15:27+08:00 ] 127.0.0.1 POST www.jfmblog.com/vQAjFVw7of.php/index/login?url=%2FvQAjFVw7of.php
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004122s ] mysql:host=127.0.0.1;dbname=jfmblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.060669s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"url\":\"\\/vQAjFVw7of.php\",\"__token__\":\"cd9c2a2a30b49012d1efa5115182e245\",\"username\":\"admin\",\"captcha\":\"himn\"}' , '/vQAjFVw7of.php/index/login?url=%2FvQAjFVw7of.php' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0' , '127.0.0.1' , 1573956927) [ RunTime:0.044209s ]
+---------------------------------------------------------------
+[ 2019-11-17T10:15:44+08:00 ] 127.0.0.1 POST www.jfmblog.com/vQAjFVw7of.php/index/login?url=%2FvQAjFVw7of.php
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019704s ] mysql:host=127.0.0.1;dbname=jfmblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.048544s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.001690s ]
+[ sql ] [ SQL ] UPDATE `fa_admin`  SET `logintime`=1573956944,`token`='67799e66-d9b3-4020-ac39-3a0769673c85',`updatetime`=1573956944  WHERE  `id` = 1 [ RunTime:0.143770s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.014436s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"url\":\"\\/vQAjFVw7of.php\",\"__token__\":\"86b98cfde283b420638fd554a9f0db4b\",\"username\":\"admin\",\"captcha\":\"xyt2\"}' , '/vQAjFVw7of.php/index/login?url=%2FvQAjFVw7of.php' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0' , '127.0.0.1' , 1573956944) [ RunTime:0.122833s ]
+---------------------------------------------------------------
+[ 2019-11-17T10:15:46+08:00 ] 127.0.0.1 GET www.jfmblog.com/vQAjFVw7of.php
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021423s ] mysql:host=127.0.0.1;dbname=jfmblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.142450s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.026694s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.051319s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003235s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `fa_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.001725s ]
+---------------------------------------------------------------
+[ 2019-11-17T10:15:47+08:00 ] 127.0.0.1 GET www.jfmblog.com/vQAjFVw7of.php/general/config?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023155s ] mysql:host=127.0.0.1;dbname=jfmblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.019676s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013044s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003117s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_config` [ RunTime:0.046830s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_config` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'general/config' LIMIT 1 [ RunTime:0.001042s ]
+---------------------------------------------------------------
+[ 2019-11-17T10:16:32+08:00 ] 127.0.0.1 GET www.jfmblog.com/vQAjFVw7of.php/addon?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015879s ] mysql:host=127.0.0.1;dbname=jfmblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.020237s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002109s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013492s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001327s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'addon' LIMIT 1 [ RunTime:0.001446s ]
+---------------------------------------------------------------
+[ 2019-11-17T10:16:37+08:00 ] 127.0.0.1 GET www.jfmblog.com/vQAjFVw7of.php/addon/config?name=blog&dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015707s ] mysql:host=127.0.0.1;dbname=jfmblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.006523s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001164s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.006590s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001704s ]

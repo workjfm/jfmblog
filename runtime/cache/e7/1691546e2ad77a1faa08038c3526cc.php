@@ -1,0 +1,4 @@
+<?php
+//000000000000
+ exit();?>
+a:2:{i:0;a:11:{s:2:"id";i:5;s:4:"type";s:14:"焦点图(小)";s:4:"name";s:15:"indexsmallfocus";s:5:"title";s:25:"首页小焦点图标题2";s:5:"image";s:54:"/uploads/20200316/e27ba4d463ba84734244c0f15c23611b.png";s:3:"url";s:5:"/p/20";s:7:"content";s:0:"";s:5:"weigh";i:5;s:10:"createtime";i:1565316395;s:10:"updatetime";i:1584359525;s:6:"status";s:6:"normal";}i:1;a:11:{s:2:"id";i:4;s:4:"type";s:14:"焦点图(小)";s:4:"name";s:15:"indexsmallfocus";s:5:"title";s:25:"首页小焦点图标题1";s:5:"image";s:54:"/uploads/20200317/dc9bc4c57099105f0abcc1f8390618ba.jpg";s:3:"url";s:5:"/p/10";s:7:"content";s:0:"";s:5:"weigh";i:4;s:10:"createtime";i:1565316372;s:10:"updatetime";i:1584408546;s:6:"status";s:6:"normal";}}
